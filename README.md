@@ -20,4 +20,5 @@ I do try to include a final confirmation prompt with proposed changes (especiall
 
 | Script | Description | Notes
 | ------ | ----------- | -----
-| [cleanup-velero-resource-labels.py](./cleanup-velero-restore-labels.py) | Cleans up the `velero.io/backup-name` and `velero.io/restore-name` labels given to resources restored by Velero. | Built to work cluster-wide but not difficult to have it scoped to a specific namespace. 
+| [cleanup-velero-resource-labels.py](./cleanup-velero-restore-labels.py) | Cleans up the `velero.io/backup-name` and `velero.io/restore-name` labels given to resources restored by Velero. | Built to work cluster-wide but not difficult to have it scoped to a specific namespace.
+| [get-backed-up-volumes.py](./get-backed-up-volumes.py) | Lists pods which have `backup.velero.io/backup-volumes` annotations and which volumes are backed up by Velero | 
